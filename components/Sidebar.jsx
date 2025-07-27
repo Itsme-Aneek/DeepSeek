@@ -17,10 +17,9 @@ const Sidebar = ({ expand, setExpand }) => {
                         </div>
                     </div>
 
-
                 </div>
 
-                <button>
+                <button className={`mt-8 flex items-center justify-center cursor-pointer ${expand ? "bg-primary hover:opacity-90 rounded-2xl gap-2 p-2.5 w-max" : "group relative h-9 w-9 mx-auto hover:bg-gray-50/30 rounded-lg"}`}>
                     <Image className={expand ? 'w-6' : 'w-7'} src={expand ? assets.chat_icon : assets.chat_icon_dull} alt="" />
                     <div className='absolute w-max -top-12 -right-12 opacity-0 group-hover:opacity-100 transition bg-black text-white text-sm px-3 py-2 rounded-lg shadow-lg pointer-events-none'>
                         New Chat
@@ -29,7 +28,18 @@ const Sidebar = ({ expand, setExpand }) => {
                     {expand && <p className='text-white text font-medium'>New Chat</p>}
                 </button>
 
+                <div className={`mt-8 text-white/ 25 text-sm ${expand ? "block" : "hidden"}`}>
+                    <p className="my-1">Recents</p>
+                    {/* chatLevel */}
+                </div>
             </div>
+
+            <div className="">
+                <div className="">
+                    < Image className='' src={expand ? assets.phone_icon : assets.phone_icon_dull} alt='' />
+                </div>
+            </div>
+
         </div>
     );
 };
