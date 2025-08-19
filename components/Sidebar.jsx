@@ -36,11 +36,18 @@ const Sidebar = ({ expand, setExpand }) => {
 
             <div className="">
                 <div className="">
-                    < Image className='' src={expand ? assets.phone_icon : assets.phone_icon_dull} alt='' />
+                    < Image className={expand ? "w-5" : "w-6.5 mx-auto"} src={expand ? assets.phone_icon : assets.phone_icon_dull} alt='' />
+                    <div className="">
+                        < Image src={assets.qrcode} alt='' className="w-44" />
+                        <p>Scan to get DeepSeek App</p>
+                        <div className={`w-3 h-3 absolute bg-black rotate-45 ${expand ? "right-1/2" : "left-4"} -bottom-1.5`}></div>
+                    </div>
                 </div>
+                {expand && <> <span>Get App</span> <Image alt="" src="" /> </>}
             </div>
 
         </div>
+
     );
 };
 
