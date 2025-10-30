@@ -131,7 +131,7 @@ const PromptBox = ({ isLoading, setIsLoading }) => {
 							src={assets.deepthink_icon}
 							alt="deepthink"
 						/>
-						DeepThink (R1)
+						NeuroThink
 					</p>
 
 					<p className="flex items-center gap-2 text-xs border border-gray-300/40 px-2 py-1 rounded-full cursor-pointer hover:bg-gray-500/20 transition">

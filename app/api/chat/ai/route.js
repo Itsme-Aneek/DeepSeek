@@ -12,7 +12,7 @@ import Chat from "@/models/Chat";
 // Initialize OpenAI client with DeepSeek API key and base URL
 
 const openai = new OpenAI({
-	baseURL: "https://router.huggingface.co/v1",
+	baseURL: "https://openrouter.ai/api/v1",
 	apiKey: process.env.NEUROSEEK_API_KEY,
 });
 
@@ -49,7 +49,18 @@ export async function POST(req) {
 
 		const completion = await openai.chat.completions.create({
 			messages: [{ role: "user", content: prompt }],
-			model: "CohereLabs/aya-expanse-32b:cohere",
+			model: "meta-llama/llama-3.3-8b-instruct:free",
+			messages: [
+				{
+					role: "system",
+					content:
+						"You are NeuroSeek, an AI assistant that always responds in fluent English only. Avoid using any other languages.",
+				},
+				{
+					role: "user",
+					content: prompt,
+				},
+			],
 			store: true,
 		});
 
