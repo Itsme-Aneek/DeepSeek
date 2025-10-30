@@ -70,7 +70,7 @@ const Sidebar = ({ expand, setExpand }) => {
 				</div>
 				<button
 					onClick={createNewChat}
-					className={`mt-8 flex items-center justify-center cursor-pointer ${
+					className={`mt-4 flex items-center justify-center cursor-pointer ${
 						expand
 							? "bg-primary hover:opacity-90 rounded-2xl gap-2 p-2.5 w-max"
 							: "group relative h-9 w-9 mx-auto hover:bg-gray-500/30 rounded-lg"
@@ -134,7 +134,7 @@ const Sidebar = ({ expand, setExpand }) => {
 								className="w-44"
 								alt="qrcode"
 							/>
-							<p>Scan to get QueryX App</p>
+							<p>Scan to get NeuroSeek App</p>
 							<div
 								className={`w-3 h-3 absolute bg-black rotate-45 ${
 									expand ? "right-1/2" : "left-4"

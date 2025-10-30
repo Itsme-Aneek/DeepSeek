@@ -12,8 +12,8 @@ import Chat from "@/models/Chat";
 // Initialize OpenAI client with DeepSeek API key and base URL
 
 const openai = new OpenAI({
-	baseURL: "https://openrouter.ai/api/v1",
-	apiKey: process.env.DEEPSEEK_API_KEY,
+	baseURL: "https://router.huggingface.co/v1",
+	apiKey: process.env.NEUROSEEK_API_KEY,
 });
 
 export async function POST(req) {
@@ -49,7 +49,7 @@ export async function POST(req) {
 
 		const completion = await openai.chat.completions.create({
 			messages: [{ role: "user", content: prompt }],
-			model: "tngtech/deepseek-r1t-chimera:free",
+			model: "CohereLabs/aya-expanse-32b:cohere",
 			store: true,
 		});
 

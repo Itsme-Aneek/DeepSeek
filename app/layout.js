@@ -11,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-	title: "QueryX",
+	title: "NeuroSeek",
 	description: "Full Stack Project",
 };
 

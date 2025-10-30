@@ -57,11 +57,11 @@ export default function Home() {
 							<div className="flex items-center gap-3">
 								<Image
 									src={assets.logo_icon}
-									className="h-20 w-20"
+									className="h-17 w-17 pr-2"
 									alt="logo"
 								/>
 								<p className="text-2xl font-medium ml-[-1rem]">
-									Hello, I am QueryX
+									Hello, I am NeuroSeek
 								</p>
 							</div>
 							<p className="text-sm ">
