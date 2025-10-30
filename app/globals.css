@@ -1,13 +1,30 @@
 @import "tailwindcss";
 
 @theme {
-	--color-primary: #4d6bfe;
+  --color-primary: #007c91;
 }
 
 html {
-	@apply scroll-smooth;
+  @apply scroll-smooth;
 }
 
+/* hide the scroll bar from the web page */
 ::-webkit-scrollbar {
-	display: none;
+  display: none;
+}
+
+.loader div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loader div:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+code {
+  white-space: pre-wrap !important;
+}
+
+pre {
+  border-radius: 10px !important;
 }
