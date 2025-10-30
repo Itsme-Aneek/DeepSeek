@@ -105,7 +105,7 @@ export default function Home() {
 						setIsLoading={setIsLoading}
 					/>
 					<p className="text-xs absolute bottom-1 text-gray-500">
-						AI-generated, for reference only | © Randima Dias
+						AI-generated, for reference only | © Aneek Hazra
 					</p>
 				</div>
 			</div>

@@ -52,19 +52,22 @@ export const AppContextProvider = ({ children }) => {
         setChats(data.data);
 
         // If the user has no chats, create one
+
         if (data.data.length === 0) {
           await createNewChat();
           return fetchUsersChats();
         } else {
-          // Sort chats by updated date
-          data.data.sort(
-            (a, b) => new Date(b.updatedAt) - new Date(a.updatedAt)
-          );
+			// Sort chats by updated date
 
-          // Set recently updated chat as selected chat
-          setSelectedChat(data.data[0]);
-          console.log(data.data[0]);
-        }
+			data.data.sort(
+				(a, b) => new Date(b.updatedAt) - new Date(a.updatedAt)
+			);
+
+			// Set recently updated chat as selected chat
+
+			setSelectedChat(data.data[0]);
+			console.log(data.data[0]);
+		}
       } else {
         toast.error(data.message);
       }
