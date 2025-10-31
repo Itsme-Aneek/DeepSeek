@@ -4,6 +4,7 @@ import "./prism.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { AppContextProvider } from "@/context/AppContext";
 import { Toaster } from "react-hot-toast";
+import PrismHighlighter from "@/components/PrismHighlighter"; // 👈 Client-side Prism loader
 
 const inter = Inter({
 	variable: "--font-inter",
@@ -12,7 +13,7 @@ const inter = Inter({
 
 export const metadata = {
 	title: "NeuroSeek",
-	description: "Full Stack Project",
+	description: "AI-Powered Technology Platform – Full Stack Project",
 };
 
 export default function RootLayout({ children }) {
@@ -20,7 +21,13 @@ export default function RootLayout({ children }) {
 		<ClerkProvider>
 			<AppContextProvider>
 				<html lang="en">
-					<body className={`${inter.className} antialiased`}>
+					<body
+						className={`${inter.className} antialiased bg-[#0a0a0a] text-white`}
+					>
+						{/* Client-side PrismJS */}
+						<PrismHighlighter />
+
+						{/* Toast Notifications */}
 						<Toaster
 							toastOptions={{
 								success: {
@@ -37,6 +44,8 @@ export default function RootLayout({ children }) {
 								},
 							}}
 						/>
+
+						{/* Page Content */}
 						{children}
 					</body>
 				</html>
