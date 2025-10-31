@@ -1,36 +1,136 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <h1>🧠 NeuroSeek</h1>
+  <p><strong>AI-Powered Conversational Intelligence — Built with Next.js & OpenAI</strong></p>
 
-## Getting Started
+  <img src="https://github.com/Itsme-Aneek/NeuroSeek/main/logo_icon.svg" alt="NeuroSeek Logo" width="280"/>
 
-First, run the development server:
+  <br/>
+  <p>
+    <b>NeuroSeek</b> is a DeepSeek-inspired AI chat platform that merges reasoning, creativity, and elegant design — all powered by OpenAI API and Next.js 15.
+  </p>
+  <br/>
+
+  <a href="#🚀-features">Features</a> •
+  <a href="#🧩-tech-stack">Tech Stack</a> •
+  <a href="#⚙️-installation">Installation</a> •
+  <a href="#💡-usage">Usage</a> •
+  <a href="#🧭-project-structure">Project Structure</a> •
+  <a href="#📜-license">License</a>
+</div>
+
+---
+
+## 🚀 Features
+
+- ⚡ **AI Chat System** — Real-time intelligent replies using the OpenAI API  
+- 🔐 **Auth Integration** — Secure user authentication via Clerk  
+- 💾 **MongoDB Support** — Data stored and managed with Mongoose  
+- 🧠 **Contextual Prompts** — Keeps conversational memory and context  
+- 🌈 **Modern UI** — Minimal, futuristic UI with TailwindCSS 4  
+- 🔥 **Fast Performance** — Powered by Next.js 15 + Turbopack  
+- 💬 **Code Highlighting** — Markdown and PrismJS support for code blocks  
+- ☁️ **Ready for Deployment** — Easily deploy on Vercel or Railway  
+
+---
+
+## 🧩 Tech Stack
+
+| Category | Technology |
+|-----------|-------------|
+| **Frontend** | Next.js 15, React 19, TailwindCSS 4 |
+| **Backend** | Next.js API Routes, Node.js |
+| **Database** | MongoDB (via Mongoose) |
+| **AI Engine** | OpenAI API |
+| **Authentication** | Clerk |
+| **Styling & Utilities** | TailwindCSS, PrismJS, React Markdown, React Hot Toast |
+| **HTTP Client** | Axios |
+| **Deployment** | Vercel |
+| **Notification & Webhooks** | Svix |
+
+---
+
+## ⚙️ Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/Itsme-Aneek/NeuroSeek.git
+
+# Navigate into the folder
+cd NeuroSeek
+
+# Install dependencies
+npm install
+
+# Copy environment variables
+cp .env.example .env
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open 👉 http://localhost:3000 to explore NeuroSeek.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 💡 Usage
 
-## Learn More
+<ol type="1">
+      <li><b>Sign</b> in securely using Clerk authentication.</li>
+      <li>Start chatting — NeuroSeek generates context-aware, intelligent responses.</li>
+      <li>View <b>syntax-highlighted code</b> outputs and markdown-rendered text.</li>
+      <li>Enjoy smooth UX with real-time responses powered by OpenAI.</li>
+</ol>
 
-To learn more about Next.js, take a look at the following resources:
+## 🧭 Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+NeuroSeek/
+├── app/                          # Next.js App Router
+├── assets/                       # Static assets (images, logos)
+├── components/
+│   ├── ChatLabel.jsx
+│   ├── Message.jsx
+│   ├── PrismHighlighter.jsx
+│   ├── PromptBox.jsx
+│   └── Sidebar.jsx
+├── config/
+│   └── db.js                     # MongoDB connection setup
+├── context/
+│   └── AppContext.jsx            # Global app context provider
+├── models/                       # Database models
+│   ├── Chat.js
+│   └── User.js
+├── public/                       # Public static files
+├── .env                          # Environment variables
+├── .gitignore
+├── eslint.config.mjs
+├── jsconfig.json
+├── middleware.ts
+├── next.config.mjs
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+└── README.md
+```
+## 🧠 Environment Variables
+Create a **.env** file and include:
+```bash
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+MONGODB_URI=
+SIGNIN_SECRET=
+NEUROSEEK_API_KEY=
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📜 License
+Licensed under the MIT License.
+Feel free to use, modify, and share.
 
-## Deploy on Vercel
+<div align="center"> 
+  <sub>Built with 💙 by <a href="https://github.com/Itsme-Aneek">Aneek Hazra</a></sub>
+  <br/> 
+  <small>© 2025 NeuroSeek — All Rights Reserved</small> 
+</div>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
