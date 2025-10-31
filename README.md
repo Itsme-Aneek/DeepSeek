@@ -10,12 +10,13 @@
   </p>
   <br/>
 
-<a href="#features">Features</a> •
-<a href="#tech-stack">Tech Stack</a> •
-<a href="#installation">Installation</a> •
-<a href="#usage">Usage</a> •
-<a href="#project-structure">Project Structure</a> •
-<a href="#license">License</a>
+<a href="#-features">Features</a> •
+<a href="#-tech-stack">Tech Stack</a> •
+<a href="#%EF%B8%8F-installation">Installation</a> •
+<a href="#-usage">Usage</a> •
+<a href="#-project-structure">Project Structure</a> •
+<a href="#-environment-variables">Environment Variables</a> •
+<a href="#-license">License</a>
 
 </div>
 
