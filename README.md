@@ -2,7 +2,7 @@
   <h1>🧠 NeuroSeek</h1>
   <p><strong>AI-Powered Conversational Intelligence — Built with Next.js & OpenAI</strong></p>
 
-  <img src="https://github.com/Itsme-Aneek/NeuroSeek/main/NueroSeek logo.png" alt="NeuroSeek Logo" width="280"/>
+  <img src="https://raw.githubusercontent.com/Itsme-Aneek/NeuroSeek/refs/heads/master/assets/logo_icon.svg" alt="NeuroSeek Logo" width="280"/>
 
   <br/>
   <p>
